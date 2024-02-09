@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teniski Savez Srbije</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="Images/TSS_lopta2_1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="banner" style="height: 80vh;background-image: linear-gradient(rgba(0,0,0,0.75)
+    ,rgba(0,0,0,0.75)),url(Images/rangliste.jpg)">
+      <nav>
+         <a href=""><img src="Images/logo.png" alt="" class="logo"></a>
+         <ul class="sidebar" id="sidebar">
+            <li><i class="fa fa-times" style="color: white;" onclick="sakriMeni()"></i></li>
+            <li><a href="index.html">Pocetna</a></li>
+            <li><a href="vesti.html">Vesti</a></li>
+            <li><a href="rangliste.html">Rang liste</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">O Nama</a>
+                <div class="dropdown-content">
+                    <a href="istorijat.html">Istorijat</a>
+                    <a href="uprava.html">Uprava</a>
+                  </div></li>
+          </ul>
+         <div class="nav-links" id="navLinks">
+            
+          <ul>
+            <li><a href="index.html">Pocetna</a></li>
+            <li><a href="vesti.html">Vesti</a></li>
+            <li><a href="rangliste.html">Rang liste</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">O Nama</a>
+                <div class="dropdown-content">
+                    <a href="istorijat.html">Istorijat</a>
+                    <a href="uprava.html">Uprava</a>
+                  </div></li>
+          </ul>
+          </div>
+          <i class="fa fa-bars" onclick="prikaziMeni()"></i>
+        </nav>
+        
+        <div class="content">
+            <h1>Rang Liste</h1>
+           </div>
+    </div>
+
+    <div class="containerr">
+
+       <form name="Forma" action="">           
+        Konkurencija:
+        <select name="konkurencija">
+            <option value="">Izaberite listu</option>
+            <option value="Muski">Seniori</option>
+            <option value="Zenski">Seniorke</option>
+        </select>
+       </form>
+        <table id="table">
+            <thead><tr>
+            <th>Rang</th>
+            <th>Igrac</th>
+            <th>Dat rodj</th>
+            <th>ID</th>
+            <th>UKT</th>
+            <th>A+M</th>
+            <th>RLP</th>
+            </tr></thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+        </table>
+
+
+
+
+
+                
+    
+    </div>
+                
+    <footer >
+        <div id = "parent">
+        <div>
+          <a href="https://www.airserbia.com/sr_latin_RS" target="_blank"><img src = "Images/download (1).png"></a>
+        </div>
+        <div>
+          <a href="https://barbosa.rs/" target="_blank"><img src = "Images/logo-black-white.jpeg" height="174px" width="274px"></a>
+        </div>
+        <div>
+          <a href="https://www.dpcgruptr.com/en" target="_blank"><img src = "Images/360_F_468299427_PN7k28yZv2VX5wnaxQ7WjXs6dKkRxfym.jpg" height="174px" width="274px"></a>
+        </div>
+      </div>
+      <div style="background-color: #0d0c49; padding-top: 10px; margin-bottom: 0; color: white;">
+      <div class="social">
+            <a href="https://www.instagram.com/teniski.savez.srbije/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/tssrbije/?locale=sr_RS"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCa85irGVKGmM4HQzmK7GW1Q"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://twitter.com/TSSRBIJE"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="index.html">Pocetna</a>
+            </li>
+            <li>
+                <a href="vesti.html">Vesti</a>
+            </li>
+            <li>
+                <a href="rangliste.html">Rang liste</a>
+            </li>
+            <li>
+                <a href="kontakt.html">Kontakt</a>
+            </li>
+            <li>
+                <a href="istorijat.html">O nama</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Teniski Savez Srbije @ 2024
+        </p></div>
+    </footer>
+
+    <script>
+        
+       var navLinks = document.getElementById("sidebar")
+       function prikaziMeni(){
+        sidebar.style.display="flex";
+       }
+       function sakriMeni(){
+        sidebar.style.display="none"
+       }
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>

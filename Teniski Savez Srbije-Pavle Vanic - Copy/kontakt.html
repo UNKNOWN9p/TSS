@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teniski Savez Srbije</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="Images/TSS_lopta2_1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="banner" style="height: 75vh; background-image: linear-gradient(rgba(0,0,0,0.75)
+    ,rgba(0,0,0,0.75)),url(Images/9174514_6340.jpg);">
+      <nav>
+         <a href=""><img src="Images/logo.png" alt="" class="logo"></a>
+         <ul class="sidebar" id="sidebar">
+            <li><i class="fa fa-times" style="color: white;" onclick="sakriMeni()"></i></li>
+            <li><a href="index.html">Pocetna</a></li>
+            <li><a href="vesti.html">Vesti</a></li>
+            <li><a href="rangliste.html">Rang liste</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">O Nama</a>
+                <div class="dropdown-content">
+                    <a href="istorijat.html">Istorijat</a>
+                    <a href="uprava.html">Uprava</a>
+                  </div></li>
+          </ul>
+         <div class="nav-links" id="navLinks">
+            
+          <ul>
+            <li><a href="index.html">Pocetna</a></li>
+            <li><a href="vesti.html">Vesti</a></li>
+            <li><a href="rangliste.html">Rang liste</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">O Nama</a>
+                <div class="dropdown-content">
+                    <a href="istorijat.html">Istorijat</a>
+                    <a href="uprava.html">Uprava</a>
+                  </div></li>
+          </ul>
+          </div>
+          <i class="fa fa-bars" onclick="prikaziMeni()"></i>
+        </nav>
+        
+        <div class="content">
+            <h1>Kontakt</h1>
+           </div>
+    </div>
+
+    <div class="containerr">
+        
+        <div class="grid-container">
+        
+        <div class="grid-child" style="margin-top: 20px;">
+        <h2>Kontakt Formular</h2>
+        <form id="kontakt-forma">
+        <div class="input-group">
+            <input type="text" id="name" required>
+            <label for="name"><i class="fa fa-user"></i> Vase ime i prezime</label>
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" required>
+            <label for="email"><i class="fa fa-envelope"></i> Vasa email adresa</label>
+        </div>
+        <div class="input-group">
+            <input type="text" id="naslov" required>
+            <label for="name"><i class="fa fa-align-left" aria-hidden="true"></i> Naslov poruke</label>
+        </div>
+        <div class="input-group">
+            <textarea id="poruka"  rows="8" required></textarea>
+            <label for="message"><i class="fa fa-comments" aria-hidden="true"></i> Poruka</label>
+        </div>
+        <button type="submit" id="submit-btn"><i class="fa fa-paper-plane" aria-hidden="true"></i> Posalji</button>
+
+        </form></div>
+    <div class="grid-child" style="margin-top: 20px;">
+            <h2>Kontakt podaci</h2>
+        <p>Bulevar despota Stefana 62-64</p>
+        <p>11108 Beograd, Srbija</p>
+        <br>
+        <p>Telefon: +381 (11) 7121898</p>
+        <p>Faks: +381 (11) 7121899</p>
+        <p>Email: office@teniskisavez.com</p>
+        <br>
+        <p>Finansije TSS: +381 (11) 7121906</p>
+        <br>
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11320.60173968511!2d20.472206517665732!3d44.81849984503122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7ab96510232f%3A0x602e4d855e90b107!2sBulevar%20despota%20Stefana%2062%2C%20Beograd%2C%20Serbia!5e0!3m2!1sen!2sus!4v1706112229235!5m2!1sen!2sus" width="96%"  height="400px" style="border:0; margin-top: 40px; max-width:800px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="g-mapa"></iframe>
+</div>
+<footer >
+    <div id = "parent">
+    <div>
+      <a href="https://www.airserbia.com/sr_latin_RS" target="_blank"><img src = "Images/download (1).png"></a>
+    </div>
+    <div>
+      <a href="https://barbosa.rs/" target="_blank"><img src = "Images/logo-black-white.jpeg" height="174px" width="274px"></a>
+    </div>
+    <div>
+      <a href="https://www.dpcgruptr.com/en" target="_blank"><img src = "Images/360_F_468299427_PN7k28yZv2VX5wnaxQ7WjXs6dKkRxfym.jpg" height="174px" width="274px"></a>
+    </div>
+  </div>
+  <div style="background-color: #0d0c49; padding-top: 10px; margin-bottom: 0; color: white;">
+  <div class="social">
+        <a href="https://www.instagram.com/teniski.savez.srbije/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/tssrbije/?locale=sr_RS"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCa85irGVKGmM4HQzmK7GW1Q"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://twitter.com/TSSRBIJE"><i class="fa fa-twitter"></i></a>
+    </div>
+
+    <ul class="list">
+        <li>
+            <a href="index.html">Pocetna</a>
+        </li>
+        <li>
+            <a href="vesti.html">Vesti</a>
+        </li>
+        <li>
+            <a href="rangliste.html">Rang liste</a>
+        </li>
+        <li>
+            <a href="kontakt.html">Kontakt</a>
+        </li>
+        <li>
+            <a href="istorijat.html">O nama</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        Teniski Savez Srbije @ 2024
+    </p></div>
+</footer>
+
+    <script>
+        
+       var navLinks = document.getElementById("sidebar")
+       function prikaziMeni(){
+        sidebar.style.display="flex";
+       }
+       function sakriMeni(){
+        sidebar.style.display="none"
+       }
+
+    </script>
+
+</body>
+</html>
